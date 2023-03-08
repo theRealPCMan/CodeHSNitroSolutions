@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class NightOut{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("How much does dinner usually cost?");
+        double dCost = input.nextDouble();
+        dCost = ((2 * dCost + (dCost)) * 100) / 100;
+        
+        System.out.println("How much does laser tag cost per person?");
+        double lCost = input.nextDouble();
+        lCost = ((2 * lCost) * 100) / 100;
+        
+        System.out.println("How much does triple scoop cost?");
+        double iCost = input.nextDouble();
+        iCost = ((iCost + (iCost/3)) * 100) / 100;
+        
+        System.out.println("Dinner will cost: $" + dCost);
+        System.out.println("Dinner will cost: $" + lCost);
+        System.out.println("Dinner will cost: $" + iCost);
+        
+        double GrandTotal = dCost + lCost + iCost;
+        System.out.println("Grand Total: $" + GrandTotal);
+    }
+}
