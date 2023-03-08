@@ -1,0 +1,13 @@
+public class IntegerOverflow{
+    public static void main(String[] args){
+        int min = -2147483648;
+        int max = 2147483647;
+        int minSubOne = -2147483648 - 1;
+        int maxAndOne = 2147483647 + 1;
+        
+        System.out.println(min);
+        System.out.println(max);
+        System.out.println(minSubOne);
+        System.out.println(maxAndOne);
+    }
+}
