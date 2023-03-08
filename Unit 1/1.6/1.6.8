@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class MovieRatings{
+    public static void main(String[] args){
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        System.out.println("Enter a movie rating (decimal inclusive): ");
+        double num1 = input.nextDouble();
+        int num2 = (int)(num1 + 0.5);
+        System.out.println(num2);
+    }
+}
