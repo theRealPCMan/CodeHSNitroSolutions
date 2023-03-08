@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CastingToDouble{
+    public static void main(String[] args){
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        System.out.println("Enter an integer: ");
+        int num1 = input.nextInt();
+        System.out.println("Enter another integer: ");
+        int num2 = input.nextInt();
+
+        double num3 = (double)num1;
+        double num4 = (double)num2;
+        
+        double total = num3 / num4;
+        System.out.println(total);
+    }
+}
