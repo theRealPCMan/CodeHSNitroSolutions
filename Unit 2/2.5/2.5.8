@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalculatorTester
+{
+    public static void main(String[] args)
+    {
+        // Put your code here
+        // A good place to start is to
+        // create comments like the last exercise
+        // to remind yourself what you need to do
+        Scanner input = new Scanner(System.in);
+        
+        //To get started, create a new Calculator object
+        Calculator PCMAN = new Calculator();
+        System.out.println("Enter two arbitrary doubles: ");
+        
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        
+        PCMAN.sum(x1, y1);
+        PCMAN.subtract(x1, y1);
+        PCMAN.multiply(x1, y1);
+        PCMAN.divide(x1, y1);
+        
+        System.out.println(PCMAN);
+    }
+}
