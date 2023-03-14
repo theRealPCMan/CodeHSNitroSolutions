@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class HelloTester
+{
+    public static void main(String[] args)
+    {
+        // Create a Scanner object
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+        Hello greeting = new Hello(name);
+        greeting.english(); greeting.spanish(); greeting.russian();
+    }
+}
