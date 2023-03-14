@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class FractionTester
+{
+    public static void main(String[] args)
+    {
+        // Create objects
+        Scanner input = new Scanner(System.in);
+        
+        Fraction f1 = new Fraction(1, 2);
+        // Ask for input
+        System.out.println("Enter a numerator: ");
+        int numerator = input.nextInt();
+        
+        System.out.println("Enter a denominator: ");
+        int denominator = input.nextInt();
+        // Create a new Fraction with the user's input
+        Fraction f2 = new Fraction (numerator, denominator);
+        // Add the fractions
+        // Make use of the getDenominator and getNumerator methods
+        int total = (f1.getNumerator() * f2.getDenominator()) + (f1.getDenominator() * f2.getNumerator());
+        int total2 = (f1.getDenominator() * f2.getDenominator());
+        // Print out the fractions as an equation
+        // Remember you don't have to call toString yourself!
+        Fraction sum = new Fraction (total, total2);
+        System.out.println(f1.toString() + " + " + f2.toString() + " = " + sum);
+    }
+}
