@@ -1,0 +1,53 @@
+Race Tester
+
+public class RaceMain
+{
+    public static void main(String[] args)
+    {
+        // Length of the course in meters
+        double distance = 2414; // ~ 1.5 miles
+        
+        // Generate a random acceleration for each car
+        Racecar one = new Racecar(Math.random() * 100 + 1, "Ethan");
+        Racecar two = new Racecar(Math.random() * 100 + 1, "Dani");
+
+        // Create two Racecar objects
+        
+
+        // Compute the finishing times for both cars
+        double oneTime = one.computeTime(distance);
+        double twoTime = two.computeTime(distance);
+        // Print times of each car
+        System.out.println("First car finished in " + Math.min(oneTime, twoTime) + " seconds");
+        System.out.println("Second car finished in " + Math.max(oneTime, twoTime) + " seconds");
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Race Class
+
+public class Racecar
+{
+    private double accel; // acceleration
+    private String name; // name of driver
+    
+    public Racecar(double acceleration, String driver)
+    {
+        accel = acceleration;
+        name = driver;
+    }
+    
+    // Returns the time it takes the racecar
+    // to complete the track rounded to 2 decimals
+    public double computeTime(double distance)
+    {
+        double time = (Math.sqrt(2 * distance / accel));
+        return Math.round(time * 100.0) / 100.0;
+    }
+    
+    public String toString()
+    {
+        return "Racer " + name;
+    }
+}
