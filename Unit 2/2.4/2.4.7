@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BotTester{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Hello! What is your name?");
+        String name = input.next();
+        
+        Bot robot = new Bot(name);
+        robot.greeting();
+        robot.help();
+        
+        System.out.println("Tell me Bot, which countries use the imperial system?");
+        robot.imperialCountries();
+        
+        System.out.println("Tell me Bot, what was the first computer bug?");
+        robot.firstBug();
+        
+        robot.goodbye();
+    }
+}
