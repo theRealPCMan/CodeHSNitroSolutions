@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CalculatorTester
+{
+    public static void main(String[] args)
+    {
+        // Put your code here
+        // A good place to start is to
+        // create comments to remind yourself 
+        // what you need to do
+        Calculator calc = new Calculator();
+        
+        double num1 = 5.6;
+        double num2 = 1.2;
+            
+        System.out.println(num1 + " + " + num2 + " = " + calc.sum(num1, num2));
+        System.out.println(num1 + " - " + num2 + " = " + calc.subtract(num1, num2));
+        System.out.println(num1 + " * " + num2 + " = " + calc.multiply(num1, num2));
+        System.out.println(num1 + " / " + num2 + " = " + calc.divide(num1, num2));
+    }
+}
