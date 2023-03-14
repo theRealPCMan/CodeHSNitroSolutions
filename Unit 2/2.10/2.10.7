@@ -1,0 +1,20 @@
+public class UnitCircle 
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Radians: (cos, sin)");
+        // Put your code here!        
+        // sin0 and cos0
+        double cos0 = Math.round(Math.cos(0) * 100) / 100;
+        double sin0 = Math.round(Math.sin(0) * 100) / 100;
+        System.out.println(0 + ": " + cos0 + ", " + sin0);
+        // sinA and cosA
+        double cosA = Math.round(Math.cos(Math.PI/2) * 100) / 100;
+        double sinA = Math.round(Math.sin(Math.PI/2) * 100) / 100;
+        System.out.println((Math.PI/2) + ": " + cosA + ", " + sinA);
+        // sinPi and cosPi
+        double cosP = Math.round(Math.cos(Math.PI) * 100) / 100;
+        double sinP = Math.round(Math.sin(Math.PI) * 100) / 100;
+        System.out.println(Math.PI + ": " + cosP + ", " + sinP);
+    }
+}
